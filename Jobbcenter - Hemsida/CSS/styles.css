@@ -1,0 +1,156 @@
+/*imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.6rem;
+  }
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  h4,
+  h5 {
+    font-size: 2.8rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+/* Color pallete for DF: 
+rgb(224,152,172) Pink
+rgb(55,55,53) Black
+rgb(111,140,216) Blue
+rgb(255,255,255) White
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.header {
+    width: 100%;
+    height: 70px;
+    background: rgb(255,255,255); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0px;
+    z-index: 3;
+}
+
+.Logo {
+    position: sticky;
+    font-size: 40px;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+}
+
+.Logo a{
+    color: rgb(55,55,53);
+    text-decoration: none;
+}
+
+.Logo a:hover{
+    color: rgb(55,55,53);
+}
+
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+
+  /*--------------------------------------------------------------
+  # Hero
+  --------------------------------------------------------------*/
+
+#hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.37), transparent),
+      url("../Bilder/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#heroTextBox {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    width: 50vh;
+    height: 35vh;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    color: rgb(55,55,53);
+  }
+
+#hero h3 {
+    width: 451px;
+    height: 72px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    color: #747474;
+}
+
+  /*--------------------------------------------------------------
+  # Media
+  --------------------------------------------------------------*/
