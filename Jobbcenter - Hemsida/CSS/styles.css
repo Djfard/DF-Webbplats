@@ -68,8 +68,7 @@ rgb(255,255,255) White
 }
 
 .Logo {
-    position: sticky;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 200;
     font-family: "Poppins", sans-serif;
 }
@@ -89,12 +88,18 @@ rgb(255,255,255) White
 
 nav {
     display: flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
     padding: 2rem;
     min-height: 10vh;
     align-items: center;
     flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    font-size: 12px;
+  }
 }
 
 nav ul {
@@ -112,6 +117,7 @@ nav ul {
 
 #hero {
     min-height: 100vh;
+    width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.37), transparent),
       url("../Bilder/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg");
     background-repeat: no-repeat;
@@ -129,28 +135,58 @@ nav ul {
 }
 
 #hero h1 {
-    width: 50vh;
-    height: 35vh;
+    width: 40vh;
+    /* height: 17vh; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 30px;
+    line-height: 50px;
     color: rgb(55,55,53);
   }
 
 #hero h3 {
-    width: 451px;
-    height: 72px;
+    /* width: 45vh; */
+    /* height: 50vh; */
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
-    letter-spacing: -0.02em;
     color: #747474;
+}
+
+#hero h5 {
+  /* import checkmark and make them same row with 2 in same h5 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 8px;
+}
+
+.myButton {
+	background-color: rgb(111,140,216);
+	border-radius:24px;
+	border:1px solid rgb(111, 118, 216);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:1vh 1.5vw;
+	text-decoration:none;
+	text-shadow:0px 1px 0px rgb(43, 75, 156);
+}
+.myButton:hover {
+  background-color:rgb(58, 94, 187);
+  color: #ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }
 
   /*--------------------------------------------------------------
   # Media
   --------------------------------------------------------------*/
+
