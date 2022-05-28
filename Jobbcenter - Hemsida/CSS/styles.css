@@ -158,22 +158,28 @@ nav ul {
 }
 
 #hero h1 {
-    width: 50vh;
+    width: 60vh;
     /* height: 17vh; */
     font-family: 'Poppins';
-    font-weight: 400;
-    font-size: 4rem;
-    line-height: 40px;
+    font-weight: 200;
+    font-size: 5rem;
+    line-height: 45px;
     color: rgb(55,55,53);
   }
+
+#hero h1:hover{
+  -webkit-text-stroke: 2px rgb(55,55,53);
+  color: transparent;
+  transition: 0.5s;
+}
 
 #hero h3 {
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 30px;
-    color: rgba(55, 55, 53, 0.678);
+    color: rgb(83, 83, 83);
 }
 
 #hero h5 {
@@ -181,6 +187,7 @@ nav ul {
   font-style: normal;
   font-weight: 300;
   font-size: 1.2rem;
+  margin-left: 1vw;
 }
 
 .heroCheck {
@@ -199,12 +206,14 @@ nav ul {
 	color:#ffffff;
 	font-family:Arial;
 	font-size:16px;
-	padding:1vh 1.5vw;
+	padding:6px 25px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px rgb(136, 60, 60);
+  text-shadow:0px 1px 0px rgb(136, 60, 60);
+  margin: 1vh 1vw;
+  margin-bottom: 15px;
 }
-.myButton:hover {
-  background:rgb(73, 29, 29), transparent;
+.myButton:hover{
+  background:rgb(148, 80, 80);
   color: #ffffff;
 }
 .myButton:active {
@@ -216,7 +225,7 @@ nav ul {
   # Om oss
   --------------------------------------------------------------*/
 #omOss {
-  min-height: 90vh;
+  min-height: 100vh;
   /* background-color: rgb(153,153,153); */
   background-color: rgb(255, 236, 236);
 
@@ -259,6 +268,14 @@ nav ul {
   width: 45vw;
 	border:1px solid rgb(87, 35, 35);
 }
+  /*--------------------------------------------------------------
+  # Kontakta Oss
+  --------------------------------------------------------------*/
+
+  #kontaktaOss {
+    min-height: 90vh;
+  }
+
   /*--------------------------------------------------------------
   # Media
   --------------------------------------------------------------*/

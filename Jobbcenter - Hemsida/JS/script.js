@@ -1,8 +1,5 @@
 window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-
     const counters = document.querySelectorAll(".count");
     const speed = 100;
 
@@ -22,10 +19,8 @@ function myFunction() {
   };
   updateCount();
     });
-  }
-}
 
 $('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
     
 
-$('body').scrollspy({ target: '#navbar-example' })
+$('body').scrollspy({ target: '#navbar-example' })})
