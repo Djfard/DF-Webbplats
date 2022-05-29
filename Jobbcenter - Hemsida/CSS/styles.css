@@ -57,9 +57,11 @@ rgb(255,255,255) White
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+
 .header {
     width: 100%;
-    height: 70px;
+    height: 10vh;
     position: fixed;
     background: rgb(248,249,250); 
     justify-content: space-around;
@@ -231,29 +233,35 @@ nav ul {
 
 }
 
-#omOssStats {
-    color: black;
-    display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 15vw;
-    margin-top: 7vh;
-    font-size: 3rem;
-    line-height: 9rem;
+.omOssStats {
+  color: black;
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 15vw;
+  margin-top: 7vh;
+  font-size: 8rem;
+  line-height: 9rem;
 }
 
-#omOssStats h1 {
+.omOssStats .counter {
+  display: inline;
+  font-size: 6rem;
+
+}
+
+.omOssStats h1 {
   font-size: 36px;
 }
 
 .omOssLeft {
   display: inline-block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .omOssLeft h5 {
@@ -268,16 +276,32 @@ nav ul {
   width: 45vw;
 	border:1px solid rgb(87, 35, 35);
 }
-  /*--------------------------------------------------------------
-  # Kontakta Oss
-  --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Kontakta Oss
+--------------------------------------------------------------*/
 
-  #kontaktaOss {
-    min-height: 90vh;
-  }
+#kontaktaOss {
+  min-height: 100vh;
+  background-color: rgb(255, 124, 124);
+}
+
+.form-background {
+  background-color: rgb(112, 93, 93);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  padding: 5vh 5vw;
+}
+
+form {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 
   /*--------------------------------------------------------------
   # Media
   --------------------------------------------------------------*/
 
-  
