@@ -25,7 +25,7 @@
                             <button class="navbar-toggler navButton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mb-2 mb-lg-1">
                                 <li class="nav-item"><a class="nav-link" href="#hero">Hem</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#omOss">Om oss</a></li>
@@ -67,7 +67,7 @@
                 <h1>Aktiva bolag</h1><h3 data-target="10" class="count">0</h3>
                 <h1>Erfarenhet</h1><h3 data-target="5" class="count">0</h3>
             </div> -->
-            <div class="counter-container">
+            <div class="counter-container omOssStats">
                 <div class="counter">
                     <h6>Kunder</h6>
                     <h3 data-target="150" class="count">0</h3>
@@ -80,14 +80,39 @@
                     <h6>Erfahrenhet</h6>
                     <h3 data-target="10" class="count">0</h3><span>+</span>
                 </div>
-              </div>
+            </div>
         </section>
 
         <!-- Tjänstekort -->
 
+        <!-- FAQ -->
+
         <!-- Forms -->
-        <section id="kontaktaOss" class="d-flex align items center">
-            <div class
+        <section id="kontaktaOss" class="d-flex align-items-center">
+            <div class="form-background">
+                <form action="" class="was-validated">
+                    <div>
+                        <label for="name" class="form-control-plaintext">Namn:</label>
+                        <input type="text" class="form-control" placeholder="Fullständiga Namn" required>
+                    </div>
+                    <div>
+                        <label for="företag" class="form-control-plaintext">Företag*:</label>
+                        <input type="text" class="form-control" placeholder="Ditt företag">
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                    </div>
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
         </section>
         <!-- Scroll up button -->
 
@@ -97,7 +122,7 @@
         <script src="../JS/script.js" defer></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-          AOS.init();
+        AOS.init();
         </script>
         <script src="../JS/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
