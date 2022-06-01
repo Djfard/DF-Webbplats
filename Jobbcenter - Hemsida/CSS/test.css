@@ -1,3 +1,396 @@
-body {
-    min-height: 100%;
+/*imports*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+  
+  h1 {
+    font-size: 2.6rem;
+  }
+  li,
+  button,
+  label,
+  input,
+  p {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 4.8rem;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: normal;
+  }
+  h4,
+  h5 {
+    font-size: 2.8rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+/* Color pallete for DF: 
+rgb(224,152,172) Pink
+rgb(55,55,53) Black
+rgb(111,140,216) Blue
+rgb(255,255,255) White
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    background: rgb(248,249,250); 
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
 }
+
+.Logo {
+    font-size: 4rem;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    color: rgb(55,55,53);
+    text-decoration: none;
+}
+
+.Logo:hover{
+    text-decoration: none;
+    color: rgba(55, 55, 53, 0.87);
+}
+
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+  /* @media only screen and (max-width: 700px) {
+    
+    .navbar-nav {
+      margin-top: 50px;
+    }
+   nav ul {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    width: 100px;
+  }
+  nav ul li {
+    color: white;
+    display: block;
+    letter-spacing: 0rem;
+    padding: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin: 10px;
+  }
+  
+}
+
+*/
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+  }
+
+.navButton {
+  background-color: black;
+  color: white;
+}
+
+  /*--------------------------------------------------------------
+  # Hero
+  --------------------------------------------------------------*/
+
+#hero {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.37), transparent),
+      url("../Bilder/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+
+#heroTextBox {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 11vw;
+}
+
+#hero h1 {
+
+    /* height: 17vh; */
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 5rem;
+    line-height: 45px;
+    color: rgb(55,55,53);
+  }
+
+  @media screen and (min-width: 700px) {
+    #hero h1 {
+        width: 60vh;
+    }
+
+
+}
+
+#hero h1:hover{
+  -webkit-text-stroke: 2px rgb(55,55,53);
+  color: transparent;
+  transition: 0.5s;
+}
+
+#hero h3 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: rgb(83, 83, 83);
+}
+
+#hero h5 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-left: 1vw;
+}
+
+.heroCheck {
+  color: black;
+  display: inline-block;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.myButton {
+	background-color: rgb(119,50,50);
+	border-radius:24px;
+	border:1px solid rgb(87, 35, 35);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:6px 25px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px rgb(136, 60, 60);
+  margin: 1vh 1vw;
+  margin-bottom: 15px;
+}
+.myButton:hover{
+  background:rgb(148, 80, 80);
+  color: #ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+  /*--------------------------------------------------------------
+  # Om oss
+  --------------------------------------------------------------*/
+  #omOss {
+    min-height: 100vh;
+    max-width: 100%;
+    /* background-color: rgb(153,153,153); */
+    background-color: rgb(255, 236, 236);
+  }
+  
+  .counter-container {
+    background-color: rgb(179, 179, 179);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    margin-left: 15vw;
+    margin-right: 1vw;
+    padding: 35px;
+    font-size: 4rem;
+    box-shadow: 12px 13.5px 19px -4.5px #000000;
+  }
+  
+  .counter-container span {
+    background-color: beige;
+  }
+  
+  .counter {
+    font-size: 4rem;
+    margin-top: 1vh;
+  }
+  
+  .fa-user {
+    font-size: 7rem;
+  }
+  
+  .fa-calendar {
+    font-size: 7rem;
+  }
+  
+  .fa-building {
+    font-size: 7rem;
+  }
+
+@media screen and (min-width: 520px) {
+    .counter-container {
+        font-size: 4rem;
+        padding: 25px;
+    }
+
+    .counter {
+        font-size: 3rem;
+    }
+
+    .fa-user {
+        font-size: 5rem;
+    }
+
+    .fa-calendar {
+        font-size: 5rem;
+    }
+
+    .fa-building {
+        font-size: 5rem;
+    }
+
+    #top-card {
+        margin-top: 8vh;
+    }
+}
+
+@media screen and (min-width: 320px) {
+    .counter-container {
+        font-size: 0.8rem;
+        padding: 15px;
+    }
+
+    .counter {
+        font-size: 1.2rem;
+    }
+
+    .fa-user {
+        font-size: 3.2rem;
+    }
+
+    .fa-calendar {
+        font-size: 3.2rem;
+    }
+
+    .fa-building {
+        font-size: 3.2rem;
+    }
+
+    #top-card {
+        margin-top: 12vh;
+    }
+}
+
+  .omOssLeft {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .omOssLeft h5 {
+    font-family: 'Poppins';
+    font-style: normal;
+    margin-top: 1.5vh;
+    font-size: 2rem;
+  }
+  
+  #pictureLeft {
+    margin-left: 5vw;
+    margin-top: 7vh;
+    height: 70vh;
+    width: 45vw;
+      border:1px solid rgb(87, 35, 35);
+    box-shadow: 12px 13.5px 19px -4.5px #000000;
+  }
+  
+  /* @media screen and (max-width: 700px) {
+    #pictureLeft {
+      height: 50vh;
+      width: 20vw;
+    }
+  }
+  */ 
+  
+/*--------------------------------------------------------------
+# Kontakta Oss
+--------------------------------------------------------------*/
+
+#kontaktaOss {
+  min-height: 100vh;
+  background-color: rgb(255, 124, 124);
+  overflow: hidden;
+}
+
+.form-background {
+  background-color: rgb(112, 93, 93);
+  position: relative;
+  left: 50%;
+  top: 50%;
+  padding: 5vh 5vw;
+}
+
+form {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+  /*--------------------------------------------------------------
+  # Media
+  --------------------------------------------------------------*/
