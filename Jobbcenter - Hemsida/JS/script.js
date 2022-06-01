@@ -1,26 +1,23 @@
-window.onscroll = function() {myFunction()};
+const counters = document.querySelectorAll('.counter');
 
-    const counters = document.querySelectorAll(".count");
-    const speed = 100;
+counters.forEach((counter) => {
+  counter.innerText = '0';
 
-    counters.forEach((counter) => {
-    const updateCount = () => {
-    const target = parseInt(+counter.getAttribute("data-target"));
-    const count = parseInt(+counter.innerText);
-    const increment = Math.trunc((target / speed)) + 1;
-    console.log(increment);
+  const updateCounter = () => {
+    const target = +counter.getAttribute('data-target');
+    const c = +counter.innerText;
+    
+    const increment = target / 1000;
 
-    if (count < target) {
-      counter.innerText = count + increment;
-      setTimeout(updateCount, 1);
+    if (c < target) {
+      counter.innerText = `${Math.ceil(c + increment)}`;
+      setTimeout(updateCounter, 1);
     } else {
-      count.innerText = target;
+      counter.innerText = target;
     }
   };
-  updateCount();
-    });
+  updateCounter();
+});
 
-$('[data-spy="scroll"]').on('activate.bs.scrollspy', function () {
-    
 
-$('body').scrollspy({ target: '#navbar-example' })})
+
