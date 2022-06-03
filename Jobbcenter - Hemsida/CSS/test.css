@@ -10,44 +10,48 @@
 /* Global Styles */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 62.5%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
   
-  body {
-    font-family: "Poppins", sans-serif;
-    position: relative;
-  }
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
   
-  h1 {
-    font-size: 2.6rem;
-  }
-  li,
-  button,
-  label,
-  input,
-  p {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 4.8rem;
-  }
-  h3 {
-    font-size: 3rem;
-    font-weight: normal;
-  }
-  h4,
-  h5 {
-    font-size: 2.8rem;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
+h1 {
+  font-size: 2.6rem;
+}
+
+li, button, label, input, p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4, h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.heroFärg{
+  background-color: rgb(170,148,137) !important;
+}
 
 /* Color pallete for DF: 
 rgb(224,152,172) Pink
@@ -144,7 +148,6 @@ nav ul {
         width: 60vh;
     }
 
-
 }
 
 #hero h1:hover{
@@ -205,18 +208,9 @@ nav ul {
   # Om oss
   --------------------------------------------------------------*/
   
-#omOss {
-  min-height: 100vh;
-  /* background-color: rgb(153,153,153); */
-}
-  
 .counter-container {
   font-size: 2rem;
   box-shadow: 12px 13.5px 19px -4.5px rgb(12, 68, 51);
-}
-
-.heroFärg{
-    background-color: rgb(170,148,137);
 }
 
 .counter-container .counter {
@@ -227,7 +221,7 @@ nav ul {
   font-size: 5rem;
 }
   
-.fa-calendar {
+.fa-money-bill {
   font-size: 5rem;
 }
   
@@ -245,7 +239,7 @@ nav ul {
 --------------------------------------------------------------*/
 
 #kontaktaOss {
-    min-height: 55vh;
+  min-height: 55vh;
 }
 
 .teal-500 {

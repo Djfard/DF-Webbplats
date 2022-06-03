@@ -14,20 +14,25 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
-  
+
 body {
   font-family: "Poppins", sans-serif;
   position: relative;
 }
-  
+
 h1 {
   font-size: 2.6rem;
 }
 
-li, button, label, input, p {
+li,
+button,
+label,
+input,
+p {
   font-size: 2rem;
 }
 
@@ -40,7 +45,8 @@ h3 {
   font-weight: normal;
 }
 
-h4, h5 {
+h4,
+h5 {
   font-size: 2.8rem;
 }
 
@@ -49,8 +55,12 @@ a {
   text-decoration: none;
 }
 
-.heroFärg{
-  background-color: rgb(170,148,137) !important;
+.heroFärg {
+  background-color: rgb(170, 148, 137) !important;
+}
+
+.teal-500 {
+  background-color: rgb(32, 201, 151);
 }
 
 /* Color pallete for DF: 
@@ -59,110 +69,100 @@ rgb(55,55,53) Black
 rgb(111,140,216) Blue
 rgb(255,255,255) White
 rgb(32,201,151) .teal-500
-rgb(170,148,137) 
+rgb(170,148,137) heroFärg
 
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
-/*
-.header {
-    width: 100%;
-    background: rgb(248,249,250); 
-    justify-content: space-around;
-    align-items: center;
-    top: 0;
-}
-*/
-
 .Logo {
-    font-size: 4rem;
-    font-weight: 200;
-    font-family: "Poppins", sans-serif;
-    color: rgb(55,55,53);
-    text-decoration: none;
+  font-size: 4rem;
+  font-weight: 200;
+  font-family: "Poppins", sans-serif;
+  color: rgb(55, 55, 53);
+  text-decoration: none;
 }
 
-.Logo:hover{
-    text-decoration: none;
-    color: rgba(55, 55, 53, 0.87);
+.Logo:hover {
+  text-decoration: none;
+  color: rgba(55, 55, 53, 0.87);
 }
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Navigation Menu
   --------------------------------------------------------------*/
 
 nav {
-    display: flex;
-    margin: auto;
-    padding: 2rem;
-    align-items: center;
+  display: flex;
+  margin: auto;
+  padding: 2rem;
+  align-items: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
 }
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Hero
   --------------------------------------------------------------*/
 
 #hero {
-    min-height: 100vh;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.37), transparent),
-      url("../Bilder/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.37), transparent),
+    url("../Bilder/towfiqu-barbhuiya-joqWSI9u_XM-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
 }
 
 #heroTextBox {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 11vw;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 11vw;
 }
 
 #hero h1 {
 
-    /* height: 17vh; */
-    font-family: 'Poppins';
-    font-weight: 200;
-    font-size: 5rem;
-    line-height: 45px;
-    color: rgb(55,55,53);
-  }
+  /* height: 17vh; */
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-size: 5rem;
+  line-height: 45px;
+  color: rgb(55, 55, 53);
+}
 
-  @media screen and (min-width: 700px) {
-    #hero h1 {
-        width: 60vh;
-    }
+@media screen and (min-width: 700px) {
+  #hero h1 {
+    width: 60vh;
+  }
 
 }
 
-#hero h1:hover{
-  -webkit-text-stroke: 2px rgb(55,55,53);
+#hero h1:hover {
+  -webkit-text-stroke: 2px rgb(55, 55, 53);
   color: transparent;
   transition: 0.5s;
 }
 
 #hero h3 {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 30px;
-    color: rgb(83, 83, 83);
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 30px;
+  color: rgb(83, 83, 83);
 }
 
 #hero h5 {
@@ -181,108 +181,132 @@ nav ul {
 }
 
 .myButton {
-	background-color: rgb(119,50,50);
-	border-radius:24px;
-	border:1px solid rgb(87, 35, 35);
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:16px;
-	padding: 6px 30px;
-	text-decoration:none;
-  text-shadow:0px 1px 0px rgb(136, 60, 60);
+  background-color: rgb(119, 50, 50);
+  border-radius: 24px;
+  border: 1px solid rgb(87, 35, 35);
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  padding: 6px 30px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px rgb(136, 60, 60);
   margin: 1vh 1vw;
   margin-bottom: 15px;
 }
-.myButton:hover{
-  background:rgb(148, 80, 80);
+
+.myButton:hover {
+  background: rgb(148, 80, 80);
   color: #ffffff;
 }
+
 .myButton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Om oss
   --------------------------------------------------------------*/
 
-  section#latest .latest-item img {
-    min-height: 100%;
-    width: 100%;
+section#lag .lag-item img {
+  min-height: 100%;
+  width: 100%;
 }
 
-section#latest button {
-    max-height: 250px;
-    padding: 0;
-    overflow: hidden;
+section#lag button {
+  padding: 0;
+  overflow: hidden;
 }
 
-section#latest .latest-item {
-    position: relative;
+section#lag .lag-item {
+  position: relative;
 }
 
-section#latest .latest-item:hover .overlay {
-    opacity: 1;
-    background: rgba(189,61,75, .9);
+section#lag .lag-item:hover .overlay {
+  opacity: 1;
 }
 
-section#latest .latest-item:hover i {
-    opacity: 1;
-    transform: none;
+section#lag .lag-item:hover i {
+  opacity: 1;
+  transform: none;
 }
 
-section#latest .overlay {
-    position: absolute;
-    top:0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(189,61,75, 1);
-    opacity: .5;
-    color: #fff;
-    transition: all .5s;
+section#lag .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(170, 148, 137, 1);
+  opacity: .5;
+  color: #fff;
+  transition: all .5s;
 }
 
-section#latest .latest-item i {
-    transform: translateY(20px);
-    transition: all .5s;
-    opacity: 0;
-    font-size: 2rem;
+section#lag .lag-item i {
+  transform: translateY(20px);
+  transition: all .5s;
+  opacity: 0;
+  font-size: 2rem;
 
 }
 
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
   # Tjänster
   --------------------------------------------------------------*/
-  
+
+.tjänster {
+  overflow: hidden;
+}
+
 .counter-container {
   font-size: 2rem;
-  box-shadow: 12px 13.5px 19px -4.5px rgb(12, 68, 51);
+  box-shadow: 4px -1.5px 8px 2.5px #8e8e8e;
 }
 
 .counter-container .counter {
   line-height: 2;
 }
-  
-.fa-user {
-  font-size: 5rem;
-}
-  
-.fa-money-bill {
-  font-size: 5rem;
-}
-  
+
+.fa-user,
+.fa-money-bill,
+.fa-percent,
+.fa-book,
+.fa-file-contract,
+.fa-file-excel,
+.fa-calendar,
 .fa-building {
-  font-size: 5rem;
+  font-size: 5rem !important;
 }
 
-.pictureLef {
-    height: 20px !important;
-    width: 40px !important;
+
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+.accordion-item {
+  font-size: 1.5rem;
 }
+
+.accordion-button {
+  font-size: 2rem !important;
+}
+
+.accordion-button:hover {
+  background-color: rgb(32, 201, 151);
+}
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: rgb(32, 201, 151) !important;
+  border-color: white;
+}
+
+/*--------------------------------------------------------------
+# News letter
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Kontakta Oss
@@ -292,40 +316,36 @@ section#latest .latest-item i {
   min-height: 55vh;
 }
 
-.teal-500 {
-  background-color: rgb(32,201,151);
-}
-
 .w-5 {
   width: 25px;
 }
 
 .mapouter {
-  position:relative;
-  text-align:right;
-  height:400px;
-  width:450px;
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 450px;
 }
 
 .gmap_canvas {
-  overflow:hidden;
-  background:none !important;
-  height:400px;
-  width:450px;
+  overflow: hidden;
+  background: none !important;
+  height: 400px;
+  width: 450px;
 }
 
 @media screen and (max-width: 480px) {
   .mapouter {
-    position:relative;
-    text-align:right;
-    height:300px !important;
-    width:90vw !important;
+    position: relative;
+    text-align: right;
+    height: 300px !important;
+    width: 90vw !important;
   }
-  
+
   .gmap_canvas {
-    overflow:hidden;
-    background:none !important;
-    height:300px !important;
-    width:90vw !important;
+    overflow: hidden;
+    background: none !important;
+    height: 300px !important;
+    width: 90vw !important;
   }
 }
