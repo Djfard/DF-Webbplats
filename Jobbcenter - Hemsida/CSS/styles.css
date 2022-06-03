@@ -2,72 +2,79 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 /* Global Styles */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-size: 62.5%;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
   
-  body {
-    font-family: "Poppins", sans-serif;
-    position: relative;
-  }
+body {
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
   
-  h1 {
-    font-size: 2.6rem;
-  }
-  li,
-  button,
-  label,
-  input,
-  p {
-    font-size: 2rem;
-  }
-  h2 {
-    font-size: 4.8rem;
-  }
-  h3 {
-    font-size: 3rem;
-    font-weight: normal;
-  }
-  h4,
-  h5 {
-    font-size: 2.8rem;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
+h1 {
+  font-size: 2.6rem;
+}
+
+li, button, label, input, p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4, h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.heroFärg{
+  background-color: rgb(170,148,137) !important;
+}
 
 /* Color pallete for DF: 
 rgb(224,152,172) Pink
 rgb(55,55,53) Black
 rgb(111,140,216) Blue
 rgb(255,255,255) White
+rgb(32,201,151) .teal-500
+rgb(170,148,137) 
 
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
 
-
+/*
 .header {
     width: 100%;
-    height: 10vh;
-    position: fixed;
     background: rgb(248,249,250); 
     justify-content: space-around;
     align-items: center;
     top: 0;
 }
+*/
 
 .Logo {
     font-size: 4rem;
@@ -88,38 +95,10 @@ rgb(255,255,255) White
 
 nav {
     display: flex;
-    width: 100%;
     margin: auto;
     padding: 2rem;
-    min-height: 10vh;
     align-items: center;
-    flex-wrap: wrap;
 }
-
-  /* @media only screen and (max-width: 700px) {
-    
-    .navbar-nav {
-      margin-top: 50px;
-    }
-   nav ul {
-    position: absolute;
-    top: 1vh;
-    right: 1vw;
-    width: 100px;
-  }
-  nav ul li {
-    color: white;
-    display: block;
-    letter-spacing: 0rem;
-    padding: 10px;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin: 10px;
-  }
-  
-}
-
-*/
 
 nav ul {
     display: flex;
@@ -127,12 +106,6 @@ nav ul {
     align-items: center;
     list-style: none;
     text-decoration: none;
-    color: black;
-  }
-
-.navButton {
-  background-color: black;
-  color: white;
 }
 
   /*--------------------------------------------------------------
@@ -147,6 +120,7 @@ nav ul {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
 #heroTextBox {
@@ -160,7 +134,7 @@ nav ul {
 }
 
 #hero h1 {
-    width: 60vh;
+
     /* height: 17vh; */
     font-family: 'Poppins';
     font-weight: 200;
@@ -168,6 +142,13 @@ nav ul {
     line-height: 45px;
     color: rgb(55,55,53);
   }
+
+  @media screen and (min-width: 700px) {
+    #hero h1 {
+        width: 60vh;
+    }
+
+}
 
 #hero h1:hover{
   -webkit-text-stroke: 2px rgb(55,55,53);
@@ -208,7 +189,7 @@ nav ul {
 	color:#ffffff;
 	font-family:Arial;
 	font-size:16px;
-	padding:6px 25px;
+	padding: 6px 30px;
 	text-decoration:none;
   text-shadow:0px 1px 0px rgb(136, 60, 60);
   margin: 1vh 1vw;
@@ -226,82 +207,75 @@ nav ul {
   /*--------------------------------------------------------------
   # Om oss
   --------------------------------------------------------------*/
-#omOss {
-  min-height: 100vh;
-  /* background-color: rgb(153,153,153); */
-  background-color: rgb(255, 236, 236);
-
+  
+.counter-container {
+  font-size: 2rem;
+  box-shadow: 12px 13.5px 19px -4.5px rgb(12, 68, 51);
 }
 
-.omOssStats {
-  color: black;
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 15vw;
-  margin-top: 7vh;
-  font-size: 8rem;
-  line-height: 9rem;
+.counter-container .counter {
+  line-height: 2;
+}
+  
+.fa-user {
+  font-size: 5rem;
+}
+  
+.fa-money-bill {
+  font-size: 5rem;
+}
+  
+.fa-building {
+  font-size: 5rem;
 }
 
-.omOssStats .counter {
-  display: inline;
-  font-size: 6rem;
-
+.pictureLef {
+    height: 20px !important;
+    width: 40px !important;
 }
 
-.omOssStats h1 {
-  font-size: 36px;
-}
-
-.omOssLeft {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.omOssLeft h5 {
-  font-family: 'Poppins';
-  font-style: normal;
-}
-
-#pictureLeft {
-  margin-left: 5vw;
-  margin-top: 7vh;
-  height: 70vh;
-  width: 45vw;
-	border:1px solid rgb(87, 35, 35);
-}
 /*--------------------------------------------------------------
 # Kontakta Oss
 --------------------------------------------------------------*/
 
 #kontaktaOss {
-  min-height: 100vh;
-  background-color: rgb(255, 124, 124);
+  min-height: 55vh;
 }
 
-.form-background {
-  background-color: rgb(112, 93, 93);
-  position: relative;
-  left: 50%;
-  top: 50%;
-  padding: 5vh 5vw;
+.teal-500 {
+  background-color: rgb(32,201,151);
 }
 
-form {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+.w-5 {
+  width: 25px;
 }
 
+.mapouter {
+  position:relative;
+  text-align:right;
+  height:400px;
+  width:450px;
+}
 
-  /*--------------------------------------------------------------
-  # Media
-  --------------------------------------------------------------*/
+.gmap_canvas {
+  overflow:hidden;
+  background:none !important;
+  height:400px;
+  width:450px;
+}
 
+@media screen and (max-width: 480px) {
+  .mapouter {
+    position:relative;
+    text-align:right;
+    height:300px !important;
+    width:90vw !important;
+  }
+  
+  .gmap_canvas {
+    overflow:hidden;
+    background:none !important;
+    height:300px !important;
+    width:90vw !important;
+  }
+}
