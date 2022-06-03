@@ -66,16 +66,6 @@ rgb(170,148,137)
 # Header
 --------------------------------------------------------------*/
 
-/*
-.header {
-    width: 100%;
-    background: rgb(248,249,250); 
-    justify-content: space-around;
-    align-items: center;
-    top: 0;
-}
-*/
-
 .Logo {
     font-size: 4rem;
     font-weight: 200;
