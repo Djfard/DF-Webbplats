@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -53,6 +55,7 @@ rgb(55,55,53) Black
 rgb(111,140,216) Blue
 rgb(255,255,255) White
 rgb(32,201,151) .teal-500
+rgb(170,148,137) 
 
 
 /*--------------------------------------------------------------
@@ -212,6 +215,10 @@ nav ul {
   box-shadow: 12px 13.5px 19px -4.5px rgb(12, 68, 51);
 }
 
+.heroFärg{
+    background-color: rgb(170,148,137);
+}
+
 .counter-container .counter {
   line-height: 2;
 }
@@ -226,6 +233,11 @@ nav ul {
   
 .fa-building {
   font-size: 5rem;
+}
+
+.pictureLef {
+    height: 20px !important;
+    width: 40px !important;
 }
 
 /*--------------------------------------------------------------
