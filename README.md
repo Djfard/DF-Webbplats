@@ -4,7 +4,7 @@ Test filer kan ignoreras!
 
 Tekniker som användes: 
 
-  HTML
+  HTML <br>
   CSS
   JS
   BOOSTRAP 5
