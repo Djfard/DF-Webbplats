@@ -58,15 +58,15 @@ rgb(255,255,255) White
 # Header
 --------------------------------------------------------------*/
 
-
+/*
 .header {
     width: 100%;
-    position: fixed;
     background: rgb(248,249,250); 
     justify-content: space-around;
     align-items: center;
     top: 0;
 }
+*/
 
 .Logo {
     font-size: 4rem;
@@ -370,26 +370,8 @@ nav ul {
 --------------------------------------------------------------*/
 
 #kontaktaOss {
-  min-height: 100vh;
-  background-color: rgb(255, 124, 124);
-  overflow: hidden;
+    min-height: 55vh;
 }
-
-.form-background {
-  background-color: rgb(112, 93, 93);
-  position: relative;
-  left: 50%;
-  top: 50%;
-  padding: 5vh 5vw;
-}
-
-form {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-
 
   /*--------------------------------------------------------------
   # Media
