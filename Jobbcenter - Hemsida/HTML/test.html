@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
+    <link rel="stylesheet" href="../CSS/bootstrap-icons.css">
     <link rel="stylesheet" href="../CSS/test.css">
     <link rel="stylesheet" href="../CSS/all.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -34,46 +35,61 @@
                 </nav>
             </div>
         </header>
+
         <!--Hero section -->
+
         <section id="hero" class="d-flex align-items-center">
-            <section id="heroTextBox" class="">
+            <div id="heroTextBox" class="">
                 <h1>Att hantera ekonomin har aldrig varit enklare!</h1>
                 <h3>Låt oss hantera all krångel och bara njut av tiden!</h3>
+                <!-- <button type="button" class="btn btn-success btn-lg">
+                    Submit
+                </button> -->
                 <a href="#" class="myButton">Start</a>
                 <h5>
                     <div class="heroCheck">&#x2611;</div> Full stöd &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="heroCheck">&#x2611;</div> Professionellt Service 
                 </h5>
-                <!-- <button type="button" class="mybutton btn btn-primary btn-lg">
-                    Submit
-                </button> -->
-            </section>
+            </div>
         </section>
 
         <!-- Om oss section + tjänster -->
-        <section id="omOss" class="d-flex align items center">
-            <div class="omOssLeft">
-                <!-- https://unsplash.com/s/photos/person -->
-                <img id="pictureLeft" src="../Bilder/craig-mckay-jmURdhtm7Ng-unsplash.jpg">
-                <h5>Craig Mckay, <strong>VD</strong> för Jobbcenter</h5>
+
+        <section id="omOss" class="">
+            <div class="containter">
+                <div class="row">
+                    <div class="col-12 g-3">
+                            <div class="col-10 col-md-6 col-lg-4 mb-5 ms-5" id="top-card">
+                                <div class="counter-container bg-success text-white p-4 m-5 d-block justify-content-center align-items-center text-center space-between">
+                                    <i class="fa-solid fa-user border border-white p-4"></i>
+                                    <div class="counter display-1" data-target="150"></div>
+                                    <h2 class="display-3">KUNDER</h2>
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 mb-5 ms-5">
+                                <div class="counter-container bg-dark text-white p-4 m-5 d-block justify-content-center align-items-center text-center">
+                                    <i class="fa-solid fa-calendar border border-dark"></i>
+                                    <div class="counter display-1" data-target="1000000"></div>
+                                    <h2 class="display-3">MOMS</h2>
+                                </div>
+                            </div>
+                            <div class="col-10 col-md-6 col-lg-4 ms-5">
+                                <div class="counter-container bg-success text-white p-4 m-5 d-block justify-content-center align-items-center text-center">
+                                    <i class="fa-solid fa-building"></i>
+                                    <div class="counter display-1" data-target="100"></div>
+                                    <h2 class="display-3">FÖRETAG</h2>
+                                </div>
+                            </div>
+                    </div>
+                <!--
+                    <div class="col-md-6">
+                            https://unsplash.com/s/photos/person 
+                            <img id="pictureLeft" src="../Bilder/craig-mckay-jmURdhtm7Ng-unsplash.jpg">
+                            <h5>Craig Mckay, <strong>VD</strong> för Jobbcenter</h5>
+                    </div>
+                -->
+                </div>
             </div>
-        <div class="omOssStats">
-            <div class="counter-container" id="top-card">
-                <i class="fa-solid fa-user"></i>
-                <div class="counter" data-target="150"></div>
-                <span>Kunder</span>
-            </div>
-            <div class="counter-container">
-                <i class="fa-solid fa-calendar"></i>
-                <div class="counter" data-target="1000000"></div>
-                <span>Moms</span>
-            </div>
-            <div class="counter-container">
-                <i class="fa-solid fa-building"></i>
-                <div class="counter" data-target="100"></div>
-                <span>Företag</span>
-            </div>
-        </div>
         </section>
 
         <!-- News letter -->
@@ -81,72 +97,126 @@
         <!-- FAQ -->
 
         <!-- Forms -->
-      <section id="kontaktaOss" class="generic bg-white">
-        <div class="container ">
-          <h2 class="display-5 text-dark mb-5 mt-sm-2">KONTAKTA OSS!</h2>
+    <section id="kontaktaOss" class="generic bg-light pt-4">
+        <div class="container teal-500 pt-3">
+            <h2 class="display-5 text-dark mb-4 me-0">KONTAKTA OSS!</h2>
     
-          <div class="row">
-            <div class="col-md-12 col-lg-6">
-              <form class="row">
-    
-                <div class="col-6">
-                  <div class="input-group">
-                    <div class="input-group-text rounded-0 bg-black border-black text-white">
-                      <i class="bi bi-person-fill"></i>
-                    </div>
-                    <input type="text" class="form-control rounded-0 border-black text-white bg-transparent"
-                      placeholder="NAMN *" required>
-                  </div>
-                </div>
-    
-                <div class="col-6">
-                  <div class="input-group">
-                    <div class="input-group-text rounded-0 bg-white border-white text-black">
-                      <i class="bi bi-at"></i>
-                    </div>
-                    <input type="email" class="form-control rounded-0 border-danger text-white bg-transparent"
-                      placeholder="EMAIL *" required>
-                  </div>
-                </div>
+            <div class="row">
+                <div class="col-md-12 col-lg-6">
+                    <form class="row">
 
-                <div class="col-6">
-                  <div class="input-group">
-                    <div class="input-group-text rounded-0 bg-black border-black text-white">
-                      <i class="bi bi-person-fill"></i>
-                    </div>
-                    <input type="telephone" class="form-control rounded-0 border-black text-black bg-transparent"
-                      placeholder="PHONE *" required>
-                  </div>
-                </div>
-    
-                <div class="col-12 py-5">
-                  <div class="input-group">
-                    <div class="input-group-text rounded-0 bg-danger border-danger text-white">
-                      <i class="bi bi-envelope-fill"></i>
-                    </div>
-                    <textarea class="form-control rounded-0 border-danger text-white bg-transparent"
-                      placeholder="MEESAGE *" rows="5" required></textarea>
-                  </div>
-                </div>
-    
-                <div class="d-grid">
-                  <button class="btn btn-outline-danger rounded-0 text-uppercase" type="submit">
-                      SEND MESSAGE
-                  </button>
-                </div>
-    
-              </form>
-            </div>
+                        <!-- Namn input -->
+                        <div class="col-6">
+                            <div class="input-group">
+                                <div class="input-group-text rounded-0 bg-light border-dark text-dark">
+                                    <i class="bi bi-person-fill"></i>
+                                </div>
+                                <input type="text" class="form-control rounded-0 border-dark text-dark bg-transparent"
+                                placeholder="NAMN *" required>
+                            </div>
+                        </div>
             
-          </div>
+                        <!-- Email input -->
+                        <div class="col-6">
+                            <div class="input-group">
+                                <div class="input-group-text rounded-0 bg-light border-dark text-dark">
+                                    <i class="bi bi-at"></i>
+                                </div>
+                                <input type="email" class="form-control rounded-0 border-dark text-dark bg-transparent"
+                                placeholder="EMAIL *" required>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="input-group">
+                                <div class="input-group-text rounded-0 bg-light border-dark text-dark">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <input type="tel" class="form-control rounded-0 border-dark text-dark bg-transparent"
+                                placeholder="PHONE *" required>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="input-group">
+                                <div class="input-group-text rounded-0 bg-light border-dark text-dark">
+                                    <i class="bi bi-building"></i>
+                                </div>
+                                <input type="text" class="form-control rounded-0 border-dark text-dark bg-transparent"
+                                placeholder="FÖRETAG *" required>
+                            </div>
+                        </div>
+            
+                        <div class="col-12 py-5">
+                            <div class="input-group">
+                                <div class="input-group-text rounded-0 bg-light border-dark text-dark">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <textarea class="form-control rounded-0 border-dark text-dark bg-transparent"
+                                placeholder="MEESAGE *" rows="5" required></textarea>
+                            </div>
+                        </div>
+            
+                        <div class="d-grid">
+                            <button class="btn btn-outline-dark rounded-0 text-uppercase mb-4" type="submit">
+                                SEND MESSAGE
+                            </button>
+                        </div>
+
+                    </form>
+                    <table class="table">
+                        <tbody>
+                        <tr class="border-0 border-dark border-2">
+                            <td colspan="7" class="align-middle">
+                            <span class="text-dark">Sven Eriksonsplatsen 1, 503 38 Borås</span>
+                            </td>
+                            <th scope="row" class="text-dark lead text-center">
+                            <i class="bi bi-geo-alt-fill" style="font-size: 2rem;"></i>
+                            </th>
+                        </tr>
+                        <tr class="border-0 border-dark border-2">
+                            <td colspan="7" class="align-middle">
+                            <span class="text-dark">033-35 80 49</span>
+                            </td>
+                            <th scope="row" class="text-dark lead text-center">
+                            <i class="bi bi-telephone-fill" style="font-size: 2rem;"></i>
+                            </th>
+                        </tr>
+            
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-12 col-lg-6 mb-3">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <div id="map-container" class="embed-responsive-item">
+                            <div id="map">
+                                <div class="mapouter">
+                                    <div class="gmap_canvas mapouter gmap_canvas">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8523.285984917009!2d12.9334844!3d57.7194898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x936d8d14c115b21b!2sSven%20Eriksonsgymnasiet!5e0!3m2!1ssv!2sse!4v1654222849716!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                        <!-- text Hitta oss! -->
+                        <!-- Icon -->
+                        <!-- Map -->
+            </div>
+
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
     
         <!-- Scroll up button -->
 
         <!-- Footer -->
 
-        </div>
+        <footer>
+            <div class="container-fluid teal-500 text-center py-4 lead text-light">2022 DANIEL FARD &copy; <br> EDUCATIONAL PURPOSES ONLY </div>
+        </footer>
+        
         <script src="../JS/script.js" defer></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
